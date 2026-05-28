@@ -93,7 +93,7 @@
 
 <h2>Exercice 6 : Le demi losange</h2>
 <p>Ecrire le code afin de produire un losange</p>
-<p>Exemple si l'utilisateur saisie le valeur 5</p>
+<p>Exemple si l'utilisateur saisie le valeur <%= cpt %></p>
 <p>
 <% for (int ligne = 1; ligne <= cpt; ligne++) {
     for (int esp = 1; esp <= 2*(cpt-ligne); esp++) {
@@ -117,7 +117,7 @@ for (int ligne = cpt-1; ligne >= 1; ligne--) {
 
 <h2>Exercice 7 : La table de multiplication</h2>
 <p>Ecrire le code afin de créser une table de multiplication</p>
-<p>Exemple si l'utilisateur saisie le valeur 5</p>
+<p>Exemple si l'utilisateur saisie le valeur <%= cpt%></p>
 <p>
 <% for (int i = 1; i <= cpt; i++) {
     out.print(cpt + " x " + i + " = " + (cpt*i) + "<br>");
