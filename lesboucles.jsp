@@ -78,7 +78,7 @@
 
 <h2>Exercice 5 : Triangle isocele</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la droite</p>
-<p>Exemple si l'utilisateur saisie le valeur 5</p>
+<p>Exemple si l'utilisateur saisie le valeur <%= cpt %></p>
 <p>
 <% for (int ligne = 1; ligne <= cpt; ligne++) {
     for (int esp = 1; esp <= cpt-ligne; esp++) {
