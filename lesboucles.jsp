@@ -64,12 +64,32 @@
 <h2>Exercice 4 : Triangle rectangle 2</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la droite</p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;***</br>&nbsp;&nbsp;****</br>*****</p>
+<p>
+<% for (int ligne = 1; ligne <= cpt; ligne++) {
+    for (int esp = 1; esp <= 2*(cpt-ligne); esp++) {
+        out.print("&nbsp;");
+    }
+    for (int col = 1; col <= ligne; col++) {
+        out.print("*");
+    }
+    out.print("<br>");
+} %>
+</p>
 
 <h2>Exercice 5 : Triangle isocele</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la droite</p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;*</br>&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;***</br>&nbsp;****</br>*****</p>
+<p>
+<% for (int ligne = 1; ligne <= cpt; ligne++) {
+    for (int esp = 1; esp <= cpt-ligne; esp++) {
+        out.print("&nbsp;");
+    }
+    for (int col = 1; col <= ligne; col++) {
+        out.print("*");
+    }
+    out.print("<br>");
+} %>
+</p>
 
 <h2>Exercice 6 : Le demi losange</h2>
 <p>Ecrire le code afin de produire un losange</p>
