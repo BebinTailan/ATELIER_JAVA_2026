@@ -90,9 +90,31 @@ Lhvrsr lvex</p>
 <p>Ecrire le programme afin d'afficher le texte en verlant </br>
 Exemple : L'hiver sera pluvieux</br>
 xueivulp ares revih'l</p>
+<%
+    for (int i = longueurChaine - 1; i >= 0; i--) {
+        out.print(chaine.charAt(i));
+    }
+%>
 
 <h2>Exercice 6 : Consonnes et voyelles</h2>
 <p>Ecrire le programme afin de compter les consonnes et les voyelles dans votre texte</p>
+<%
+    int nbVoyelles = 0;
+    int nbConsonnes = 0;
+    String voyelles = "aeiouAEIOUàâéèêëîïôùûü";
+    for (int i = 0; i < longueurChaine; i++) {
+        char c = chaine.charAt(i);
+        if (Character.isLetter(c)) {
+            if (voyelles.indexOf(c) != -1) {
+                nbVoyelles++;
+            } else {
+                nbConsonnes++;
+            }
+        }
+    }
+%>
+<p>Nombre de voyelles : <%= nbVoyelles %></p>
+<p>Nombre de consonnes : <%= nbConsonnes %></p>
 
 <% } %>
 <p><a href="index.html">Retour au sommaire</a></p>
